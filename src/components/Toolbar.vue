@@ -2,7 +2,7 @@
   <div class="toolbar">
     <div class="content">
       <a>
-        <div id="logo"></div>
+        <div class="logo"></div>
       </a>
       <div style="display :inline-block;width: 100%;"></div>
       <div class="menu">
@@ -32,7 +32,7 @@ export default {
 
 .content{
    max-width: 1060px;
-    min-width: 800;
+    min-width: 800px;
     height: 45px;
     display: flex;
     align-items: center;
@@ -56,7 +56,7 @@ export default {
     text-decoration: none;
 }
 
-#logo{
+.logo{
     background-image: url(../assets/img/v2ex@2x.png);
     background-size: 94px 30px;   
     width: 94px;
