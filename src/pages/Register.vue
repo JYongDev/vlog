@@ -65,6 +65,7 @@ export default {
             console.log("email = "+ this.email);
             console.log("password = "+ this.password);
             console.log("verifyCode = "+ this.verifyCode);
+            this.$router.push('/');
         },
         refresh:function(){
             console.log(" refresh img ");

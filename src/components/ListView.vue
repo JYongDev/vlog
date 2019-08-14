@@ -11,10 +11,8 @@
                 <a>{{ item.type }}</a>
             </div>
     
-            <div class="list_item_topic"> 
-                <a v-bind:href="item.detailUrl">
-                    {{ item.title }}
-                </a>  
+            <div class="list_item_topic">
+                <router-link :to="{name :'Detail' ,params:{ id:item.id}}"> {{ item.title }} </router-link> 
             </div>
         </div>
     </div>

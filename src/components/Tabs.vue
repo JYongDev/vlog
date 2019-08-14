@@ -3,7 +3,8 @@
         <a  class="tab_item" v-for="(item,index) in datas" 
             v-bind:key="index"
             v-bind:class="{tab_item_select : activeIndex === index}" 
-            v-on:click="onTabClick(index)">
+            v-on:click="onTabClick(index)"
+            >
                 {{item.name}}
         </a>
     </div>
@@ -42,7 +43,9 @@ export default {
     font-size: 14px;
     line-height: 14px;
     text-align: left;
+    cursor:pointer;
 }
+
 .tab_item,
 .tab_item:link,
 .tab_item:active,

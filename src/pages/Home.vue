@@ -103,20 +103,35 @@ export default {
   },
   data:function(){
     return{
-      tabList:tabsData,
-      listDatas:listViewData
+      tabList:[],
+      listDatas:[]
     }
   },
   methods:{
     switchTab:function(index){
       console.log("switch tabs id = "+ this.tabList[index].id);
-      this.listDatas= listViewData2;
+      var id = this.tabList[index].id;
+      this.requestList(id);
+      
     },
     getCurrentTab:function(){
         var index = this.$refs.tabChild.currentTab();
         console.log("index = "+ this.tabList[index].id);
         return index;
+    },
+    requestList:function(id){
+        console.log("id = "+id);
+        this.listDatas = listViewData;
+    },
+    requestTabs:function(){
+      console.log("request tabs ");
+      this.tabList = tabsData;
     }
+  },
+  mounted:function(){
+    this.requestTabs();
+    var id = this.getCurrentTab();  
+    this.requestList(id);
   }
 }
 </script>

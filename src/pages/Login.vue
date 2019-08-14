@@ -20,8 +20,8 @@
                                         <div class="text_box">
                                             <input v-model="verifyCode" class="text_input" type="text" name="code" placeholder="验证码" autocomplete="off"/>
                                         </div>
-                                    </div>
                                 </div>
+                            </div>
                             <button class="button_box" type="button" v-on:click="login">登录</button>
                            
                             <div class="forget_psw">
@@ -59,6 +59,8 @@ export default {
             console.log("username = "+ this.username);
             console.log("password = "+ this.password);
             console.log("verfyCode = "+ this.verifyCode);
+            
+            this.$router.push('/');
         },
         refresh:function(){
             console.log("refresh img ");
