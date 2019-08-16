@@ -22,8 +22,90 @@
 <script>
 export default {
     name:'ListView',
-    props:{
-        datas:Array
+     data:function(){
+         return {
+            datas:Array
+        }
+    }, 
+    methods:{
+        getListData :function(name){
+            this.datas = [
+                {
+                    detailUrl:"detail.html",
+                    id:1,
+                    type:'博客',
+                    title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
+                },
+                {
+                    detailUrl:"detail.html",
+                    id:2,
+                    type:'博客',
+                    title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
+                },
+                {
+                    detailUrl:"detail.html",
+                    id:3,
+                    type:'博客',
+                    title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
+                },
+                {
+                    detailUrl:"detail.html",
+                    id:4,
+                    type:'博客',
+                    title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
+                },
+                {
+                    detailUrl:"detail.html",
+                    id:5,
+                    type:'博客',
+                    title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
+                },
+                {
+                    detailUrl:"detail.html",
+                    id:6,
+                    type:'博客',
+                    title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
+                },
+                {
+                    detailUrl:"detail.html",
+                    id:7,
+                    type:'博客',
+                    title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
+                },
+                {
+                    detailUrl:"detail.html",
+                    id:8,
+                    type:'博客',
+                    title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
+                },
+                {
+                    detailUrl:"detail.html",
+                    id:9,
+                    type:'博客',
+                    title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
+                },
+                {
+                    detailUrl:"detail.html",
+                    id:10,
+                    type:'博客',
+                    title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
+                },
+            ];
+        }
+    },
+    mounted:function(){
+        var name = this.$route.params.name
+        console.log("aaa name = "+name)
+        var newName = name.toLowerCase();
+        this.getListData(newName);
+        this.$parent.selTabs(newName);
+    }
+    ,watch:{
+        '$route':function(to ,from){
+            console.log('------------------------');
+            console.log("to = "+ to.params.name);
+            console.log("from = "+ from.params.name)
+        }
     }
 }
 </script>

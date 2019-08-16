@@ -4,6 +4,9 @@ import home from '@/pages/Home';
 import login from '@/pages/Login';
 import register from '@/pages/Register';
 import detail from '@/pages/Detail';
+import tabs from '@/components/Tabs';
+import listview from '@/components/ListView';
+import hello from '@/components/HelloWorld';
 
 Vue.use(Router)
 
@@ -12,8 +15,20 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect:'/home/topics/total'
+    },
+    {
+      path :'/home',
       name: 'Home',
-      component: home
+      redirect:'/home/topics/total',
+      component: home ,
+      children:[
+        {
+          name:'topics',
+          path:'topics/:name',
+          component:listview
+        }
+      ]
     }
     ,
     {

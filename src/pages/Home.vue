@@ -3,8 +3,8 @@
     <toolbar></toolbar>
     <div class="center" >
       <div class="content">
-        <tabs ref="tabChild" :datas="tabList" v-on:switchTab="switchTab"></tabs>
-        <listview :datas="listDatas"></listview>
+        <tabs ref="tabs" :datas="tabList"></tabs>
+        <router-view></router-view>
       </div>
     </div>
     <bottom></bottom>
@@ -13,125 +13,34 @@
 
 <script>
 
-const tabsData=[{id:1,name:'Java'},{id:2,name:'Android'},{id:3,name:'Git'},{id:4,name:'SpringBoot'},{id:5,name:'Vue'}]
-const listViewData =[
-    {
-        detailUrl:"detail.html",
-        id:1,
-        type:'博客',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-    {
-        detailUrl:"detail.html",
-        id:2,
-        type:'博客',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-    {
-        detailUrl:"detail.html",
-        id:3,
-        type:'博客',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-    {
-        detailUrl:"detail.html",
-        id:4,
-        type:'博客',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-    {
-        detailUrl:"detail.html",
-        id:5,
-        type:'博客',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-    {
-        detailUrl:"detail.html",
-        id:6,
-        type:'博客',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-    {
-        detailUrl:"detail.html",
-        id:7,
-        type:'博客',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-    {
-        detailUrl:"detail.html",
-        id:8,
-        type:'博客',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-    {
-        detailUrl:"detail.html",
-        id:9,
-        type:'博客',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-    {
-        detailUrl:"detail.html",
-        id:10,
-        type:'博客',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-];
-const listViewData2 =[
-    {
-        detailUrl:"detail.html",
-        id:1,
-        type:'Android',
-        title:'博客 博客 博客 博客 博客 博客 博客 博客 博客 ',
-    },
-    {
-        detailUrl:"detail.html",
-        id:2,
-        type:'Android',
-        title:'Android Android Android Android Android',
-    }
-];
+const tabsData=[{id:1,name:'Total'},{id:2,name:'Java'},{id:3,name:'Android'},
+{id:4,name:'Git'},{id:6,name:'Vue'},{id:7,name:'SpringBoot'}];
 
 import toolbar from '@/components/Toolbar';
 import tabs from '@/components/Tabs';
-import listview from '@/components/ListView';
 import bottom from '@/components/Footer';
 
 export default {
   name: 'Home',
   components:{
-    toolbar,tabs,listview,bottom
+    toolbar,tabs,bottom
   },
   data:function(){
     return{
-      tabList:[],
-      listDatas:[]
+      tabList:[]
     }
   },
   methods:{
-    switchTab:function(index){
-      console.log("switch tabs id = "+ this.tabList[index].id);
-      var id = this.tabList[index].id;
-      this.requestList(id);
-      
-    },
-    getCurrentTab:function(){
-        var index = this.$refs.tabChild.currentTab();
-        console.log("index = "+ this.tabList[index].id);
-        return index;
-    },
-    requestList:function(id){
-        console.log("id = "+id);
-        this.listDatas = listViewData;
-    },
     requestTabs:function(){
-      console.log("request tabs ");
       this.tabList = tabsData;
+    },
+    selTabs:function(name){
+      console.log("name  = "+ name)
+        this.$refs.tabs.activeIndex = name;
     }
   },
   mounted:function(){
     this.requestTabs();
-    var id = this.getCurrentTab();  
-    this.requestList(id);
   }
 }
 </script>

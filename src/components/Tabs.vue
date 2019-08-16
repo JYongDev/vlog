@@ -1,35 +1,33 @@
 <template>
     <div id="tabs">
-        <a  class="tab_item" v-for="(item,index) in datas" 
-            v-bind:key="index"
-            v-bind:class="{tab_item_select : activeIndex === index}" 
-            v-on:click="onTabClick(index)"
-            >
-                {{item.name}}
-        </a>
+        <router-link class="tab_item" v-for="(item,index) in datas" 
+            :key="index"
+            :class="{tab_item_select : activeIndex === item.name.toLowerCase()}" 
+             @click.native="onTabClick(item.name.toLowerCase())"
+            :to="{name:'topics' ,params:{name :item.name.toLowerCase()}}">
+            {{item.name}}
+        </router-link>
     </div>
 </template>
 
 <script>
+//   active-class="tab_item_select"
 export default {
     name:'Tabs',
-    data:function(){
+    data :function(){
         return {
-            activeIndex: 0 
+            activeIndex:String
         }
     },
     props:{
         datas:Array
     },
     methods:{
-        onTabClick(indexVal){
-            this.activeIndex = indexVal;
-            this.$emit('switchTab',indexVal);
-        },
-        currentTab(){
-            return this.activeIndex;
+        onTabClick(name){
+            this.activeIndex=name;
         }
     }
+    
 }
 </script>
 
@@ -53,12 +51,13 @@ export default {
 {
     text-align: center;
     font-size: 14px;
-    padding: 3px 8px;
+    padding: 3px 10px;
     border-radius: 4px;
     margin-right: 10px;
     color: #304455;
     text-decoration: none;
 }
+
 
 .tab_item:hover{
     background-color: #efefef;
@@ -71,7 +70,7 @@ export default {
 .tab_item_select{
     text-align: center;
     font-size: 14px;
-    padding: 3px 8px;
+    padding: 3px 10px;
     border-radius: 4px;
     margin-right: 10px;
     color: #fff;
