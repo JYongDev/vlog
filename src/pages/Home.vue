@@ -33,10 +33,6 @@ export default {
   methods:{
     requestTabs:function(){
       this.tabList = tabsData;
-    },
-    selTabs:function(name){
-      console.log("name  = "+ name)
-        this.$refs.tabs.activeIndex = name;
     }
   },
   mounted:function(){

@@ -95,10 +95,8 @@ export default {
     },
     mounted:function(){
         var name = this.$route.params.name
-        console.log("aaa name = "+name)
         var newName = name.toLowerCase();
         this.getListData(newName);
-        this.$parent.selTabs(newName);
     }
     ,watch:{
         '$route':function(to ,from){

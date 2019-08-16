@@ -2,8 +2,7 @@
     <div id="tabs">
         <router-link class="tab_item" v-for="(item,index) in datas" 
             :key="index"
-            :class="{tab_item_select : activeIndex === item.name.toLowerCase()}" 
-             @click.native="onTabClick(item.name.toLowerCase())"
+            active-class="tab_item_select"
             :to="{name:'topics' ,params:{name :item.name.toLowerCase()}}">
             {{item.name}}
         </router-link>
@@ -14,20 +13,9 @@
 //   active-class="tab_item_select"
 export default {
     name:'Tabs',
-    data :function(){
-        return {
-            activeIndex:String
-        }
-    },
     props:{
         datas:Array
-    },
-    methods:{
-        onTabClick(name){
-            this.activeIndex=name;
-        }
     }
-    
 }
 </script>
 
