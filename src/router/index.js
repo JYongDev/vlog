@@ -4,9 +4,7 @@ import home from '@/pages/Home';
 import login from '@/pages/Login';
 import register from '@/pages/Register';
 import detail from '@/pages/Detail';
-import tabs from '@/components/Tabs';
 import listview from '@/components/ListView';
-import hello from '@/components/HelloWorld';
 
 Vue.use(Router)
 

@@ -15,5 +15,6 @@ export default {
 body{
   margin: 0px;
   padding: 0px;
+  font-family: helvetica neue,luxi sans,dejavu sans,Tahoma,hiragino sans gb,microsoft yahei,sans-serif;
 }
 </style>

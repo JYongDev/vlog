@@ -10,7 +10,6 @@
 </template>
 
 <script>
-//   active-class="tab_item_select"
 export default {
     name:'Tabs',
     props:{
@@ -23,7 +22,6 @@ export default {
 <style scoped>
 #tabs{
     border-bottom: 1px solid #efefef;
-    border-radius: 5px;
     padding: 13px;
     background: #fff;
     font-size: 14px;
@@ -39,10 +37,10 @@ export default {
 {
     text-align: center;
     font-size: 14px;
-    padding: 3px 10px;
+    padding: 5px 8px;
     border-radius: 4px;
     margin-right: 10px;
-    color: #304455;
+    color: #555;
     text-decoration: none;
 }
 
@@ -51,19 +49,18 @@ export default {
     background-color: #efefef;
 }
 
-.tab_item_select:hover,
 .tab_item_select:visited,
 .tab_item_select:link,
 .tab_item_select:active,
 .tab_item_select{
     text-align: center;
     font-size: 14px;
-    padding: 3px 10px;
+    padding: 5px 8px;
     border-radius: 4px;
     margin-right: 10px;
     color: #fff;
     text-decoration: none;
-    background-color: #000;
+    background-color: #334;
 }
 
 </style>

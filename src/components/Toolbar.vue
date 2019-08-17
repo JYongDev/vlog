@@ -33,7 +33,7 @@ export default {
 .content{
    max-width: 1060px;
     min-width: 800px;
-    height: 45px;
+    height: 44px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -51,7 +51,7 @@ export default {
 .menuitem:active,
 .menuitem:link,
 .menuitem{
-    color: #778087;
+    color: #556;
     margin-left: 10px;
     text-decoration: none;
 }

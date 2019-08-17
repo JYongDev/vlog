@@ -47,6 +47,7 @@ export default {
   background-color:#e2e2e2;
 }
 .content{
+  padding-top: 2px;
   background-color:#fff;
   border-radius: 5px;
   width: 1060px;
