@@ -51,11 +51,11 @@ export default {
     },
     data:function(){
         return {
-            username:'',
-            phone:'',
-            email:'',
-            password:'',
-            verifyCode:''
+            username:String,
+            phone:String,
+            email:String,
+            password:String,
+            verifyCode:String
         }
     },
     methods:{

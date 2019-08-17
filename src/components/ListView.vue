@@ -39,7 +39,7 @@ export default {
                 {
                     detailUrl:"detail.html",
                     id:1,
-                    type:'博客',
+                    type:'Android',
                     title:'拉黑一个人，会让你看不到完整的世界；试试拉红？',
                     time:'2019-08-17 12:22:23',
                     writer:'XiaoUzi'
@@ -47,7 +47,7 @@ export default {
                 {
                     detailUrl:"detail.html",
                     id:2,
-                    type:'博客',
+                    type:'Git',
                     title:'做了一个电影小程序',
                     time:'2019-08-17 12:22:23',
                     writer:'XiaoUzi'
@@ -55,7 +55,7 @@ export default {
                 {
                     detailUrl:"detail.html",
                     id:3,
-                    type:'博客',
+                    type:'Vue',
                     title:'方便查看 GitHub Trending 的小程序，随时查看没有遗漏~',
                     time:'2019-08-17 12:22:23',
                     writer:'XiaoUzi'
@@ -63,7 +63,7 @@ export default {
                 {
                     detailUrl:"detail.html",
                     id:4,
-                    type:'博客',
+                    type:'SpringBoot',
                     title:'迫于一些奇奇怪怪的原因，在 iOS 上通过 steam link 用 Dota2 客户端看 TI 的教程',
                     time:'2019-08-17 12:22:23',
                     writer:'XiaoUzi'
@@ -71,7 +71,7 @@ export default {
                 {
                     detailUrl:"detail.html",
                     id:5,
-                    type:'博客',
+                    type:'Android',
                     title:'我有一个很惨的想法，让有网瘾的人，疯狂做他喜欢做的事，帮他戒除网瘾',
                     time:'2019-08-17 12:22:23',
                     writer:'XiaoUzi'
@@ -79,7 +79,7 @@ export default {
                 {
                     detailUrl:"detail.html",
                     id:6,
-                    type:'博客',
+                    type:'Java',
                     title:'接口文档工具，现已支持历史记录、diff、版本啦，欢迎围观吐槽',
                     time:'2019-08-17 12:22:23',
                     writer:'XiaoUzi'
@@ -87,7 +87,7 @@ export default {
                 {
                     detailUrl:"detail.html",
                     id:7,
-                    type:'博客',
+                    type:'Vue',
                     title:'豆瓣的「阿尔法城」如果是分布式的或许能存活下来',
                     time:'2019-08-17 12:22:23',
                     writer:'XiaoUzi'
@@ -95,7 +95,7 @@ export default {
                 {
                     detailUrl:"detail.html",
                     id:8,
-                    type:'博客',
+                    type:'Git',
                     title:'我们团队开源了一个终端 AI 运行环境，欢迎试用吐槽',
                     time:'2019-08-17 12:22:23',
                     writer:'XiaoUzi'
@@ -103,7 +103,7 @@ export default {
                 {
                     detailUrl:"detail.html",
                     id:9,
-                    type:'博客',
+                    type:'Java',
                     title:'当掌握到一定程度的 Python 后，读源码是否更容易提高技能？',
                     time:'2019-08-17 12:22:23',
                     writer:'XiaoUzi'
@@ -111,7 +111,7 @@ export default {
                 {
                     detailUrl:"detail.html",
                     id:10,
-                    type:'博客',
+                    type:'Java',
                     title:'大佬们的最后一款摸鱼程序！今日热榜，支持全平台： PC、移动 Web、Chrome 插件、PWA（Android、iOS）和桌面程序（Win、 Linux 、MacOS）。随时随地，愉快摸鱼！',
                     time:'2019-08-17 12:22:23',
                     writer:'XiaoUzi'

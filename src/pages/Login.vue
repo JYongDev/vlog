@@ -16,15 +16,15 @@
                             </div>
                             <div>
                                 <div class="verify_box">
-                                        <img src="../assets/img/v2ex@2x.png" v-on:click="refresh">
+                                        <img src="../assets/img/v2ex@2x.png" @click="refresh">
                                         <div class="text_box">
                                             <input v-model="verifyCode" class="text_input" type="text" name="code" placeholder="验证码" autocomplete="off"/>
                                         </div>
                                 </div>
                             </div>
-                            <button class="button_box" type="button" v-on:click="login">登录</button>
+                            <button class="button_box" type="button" @click="login">登录</button>
                            
-                            <div class="forget_psw">
+                            <div class="forget">
                                 <a href="#">
                                     忘记密码
                                 </a>
@@ -137,16 +137,6 @@ export default {
     display: flex;
 }
 
-a{
-    color: #778087;
-    text-decoration: none;
-}
-
-
-a:visited,a:active,a:link{
-    color: #778087;
-    text-decoration: none;
-}
 
 .verify_box img{
     padding:1px 2px;
@@ -168,10 +158,15 @@ a:visited,a:active,a:link{
     border: none;
 }
 
-.forget_psw{
+.forget a:hover{
+    text-decoration: underline;
+}
+.forget a{
     width: 100%;
     color: #778087;
     font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .space120{
