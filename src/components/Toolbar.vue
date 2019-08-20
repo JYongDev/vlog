@@ -1,10 +1,9 @@
 <template>
   <div class="toolbar">
     <div class="content">
-      <a>
+      <router-link to="/">
         <div class="logo"></div>
-      </a>
-      <div style="display :inline-block;width: 100%;"></div>
+      </router-link>
       <div class="menu">
         <router-link class="menuitem" to="/">首页</router-link>
         <router-link class="menuitem" to="/register">注册</router-link>
@@ -31,19 +30,19 @@ export default {
 }
 
 .content{
-   max-width: 1060px;
-    min-width: 800px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 15px;
-    font-weight: 500;
+  max-width: 1060px;
+  min-width: 800px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .menu{
    display :inline-block;
-    width: 350px;
+    width: 100%;
     text-align: right;
 }
 
