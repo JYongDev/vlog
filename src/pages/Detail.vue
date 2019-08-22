@@ -1,8 +1,7 @@
 <template>
     <div>
         <toolbar></toolbar>
-         <div class="container">
-            <div class="space20"></div> 
+        <div class="container">
             <div class="detail_wrapper">
                 <div class="detail_content">
                     <div class="content_head">                    
@@ -18,7 +17,6 @@
                     <div class="content_main" v-html="blog.content"></div>
                     <div style="height: 40px"></div>
                 </div>
-                <div class="space20"></div>
                 <div class="detail_comments">
                     <div class="detail_comments_head">
                         <span>155</span>
@@ -39,9 +37,8 @@
                         </div>
                     </div>
                 </div>
-                  <div class="space20"></div>
+            </div>
         </div>
-    </div>
         <bottom></bottom>
     </div>
 </template>
@@ -81,28 +78,24 @@ export default {
 </script>
 
 <style scoped>
-.detail_wrapper{
-    margin-top: 20px;
-    max-width: 960px;
-    min-width: 600px;
-    margin: 0 auto ;
-    height: auto;
+.container{
+    background-color: #7b95b3;
+    padding: 30px 0;
 }
 
-.detail_content{
-    border-radius: 5px;
-    box-shadow: 0 2px 3px rgba(0,0,0,.1);
-    border-bottom: 1px solid #e2e2e2;
+.detail_wrapper{
+    max-width: 960px;
+    margin: 0 auto ;
     height: auto;
     background-color: white;
 }
-.container{
-    background-color: #2d76c8;
+
+.detail_content{
+    height: auto;
 }
 
 .content_head{
     display: flex;
-    /* align-items: right; */
     text-align: right;
     padding: 20px 15px;
     border-bottom: 1px;
@@ -112,7 +105,6 @@ export default {
 
 .content_head img{
    border-radius: 10px;
-     /* float: right;  */
     width: 69px;
     height: 69px;
     margin-right: 15px;
