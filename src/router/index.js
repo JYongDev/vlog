@@ -27,18 +27,18 @@ export default new Router({
           component:listview
         }
       ]
-    }
-    ,
-    {
-      path:'/login',
-      name:'Login',
-      component: login
-    },
-    {
-      path:'/register',
-      name:'Register',
-      component: register
-    },
+    } ,
+    // ,
+    // {
+    //   path:'/login',
+    //   name:'Login',
+    //   component: login
+    // }
+    // {
+    //   path:'/register',
+    //   name:'Register',
+    //   component: register
+    // },
     {
       path:'/detail/:id',
       name:'Detail',

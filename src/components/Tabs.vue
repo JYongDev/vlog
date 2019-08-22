@@ -27,7 +27,6 @@ export default {
     font-size: 14px;
     line-height: 14px;
     text-align: left;
-    cursor:pointer;
 }
 
 .tab_item,

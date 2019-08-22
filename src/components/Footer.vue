@@ -30,20 +30,15 @@ export default {
 <style scoped>
 #bottom {
     border-top: 1px solid rgba(0,0,0,.22);
-    background-color: var(--box-background-color);
-    text-align: center;
-    color: #999;
-    padding: 0 10px;
 }
 
 .content {
-    min-width: 600px;
     max-width: 1100px;
     margin: 0 auto;
 }
 
 .inner {
-    padding: 30px 10px;
+    padding: 40px 10px;
     font-size: 14px;
     line-height: 150%;
     text-align: left;

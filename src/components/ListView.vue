@@ -1,9 +1,8 @@
 <template>
-    <div >
+    <div>
         <div class="list_items" v-for="item in datas" :key="item.id">
             <div>
-                <!-- <button @click="onCilck">click</button> -->
-                <a >
+                <a>
                     <img class="cover"  src="../assets/img/avatar5.png" />
                 </a>
             </div>
@@ -119,29 +118,17 @@ export default {
                 },
             ];
         }
-        /* ,
-        printCount:function(){
-            var counts =  this.$store.state.count;
-            console.log('counts = '+ counts);
-            var counts1 = this.$store.getters.getCount;
-            console.log('counts1 = '+ counts1);
-        },
-        onCilck:function(){
-             this.$store.commit('increate');
-        } */
     },
     mounted:function(){
         var name = this.$route.params.name
         var newName = name.toLowerCase();
         this.getListData(newName);
-       
-    }
-    ,watch:{
+    },
+    watch:{
         '$route':function(to ,from){
             console.log('------------------------');
             console.log("to = "+ to.params.name);
             console.log("from = "+ from.params.name)
-            //  this.printCount();
         }
     }
 }

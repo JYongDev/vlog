@@ -43,13 +43,12 @@ export default {
 
 <style scoped>
 .center{
-  padding:20px 0;
+  padding:25px 0;
   background-color:#e2e2e2;
 }
+
 .content{
-  padding-top: 2px;
   background-color:#fff;
-  border-radius: 5px;
   width: 1060px;
   margin: 0 auto;
   height: auto;

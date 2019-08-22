@@ -12,7 +12,8 @@ export default {
 </script>
 
 <style>
-body{
+html,body{
+  height: 100%;
   margin: 0px;
   padding: 0px;
   font-family: helvetica neue,luxi sans,dejavu sans,Tahoma,hiragino sans gb,microsoft yahei,sans-serif;
