@@ -41,6 +41,7 @@ export default {
     margin-right: 10px;
     color: #555;
     text-decoration: none;
+    display: inline-block;
 }
 
 

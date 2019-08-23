@@ -3,8 +3,15 @@
     <toolbar></toolbar>
     <div class="center" >
       <div class="content">
-        <tabs ref="tabs" :datas="tabList"></tabs>
-        <router-view></router-view>
+        <div class="left">
+          <tabs ref="tabs" :datas="tabList"></tabs>
+          <router-view></router-view>
+        </div>
+        <div class="right">
+          <hot></hot>
+          <adboard></adboard>
+            <!-- <adboard></adboard> -->
+        </div>
       </div>
     </div>
     <bottom></bottom>
@@ -19,11 +26,14 @@ const tabsData=[{id:1,name:'Total'},{id:2,name:'Java'},{id:3,name:'Android'},
 import toolbar from '@/components/Toolbar';
 import tabs from '@/components/Tabs';
 import bottom from '@/components/Footer';
+import hot from '@/components/Hot';
+import adboard from '@/components/ADBoard';
 
 export default {
   name: 'Home',
   components:{
-    toolbar,tabs,bottom
+    toolbar,tabs,bottom,hot
+    ,adboard
   },
   data:function(){
     return{
@@ -42,15 +52,6 @@ export default {
 </script>
 
 <style scoped>
-.center{
-  padding:25px 0;
-  background-color:#e2e2e2;
-}
 
-.content{
-  background-color:#fff;
-  width: 1060px;
-  margin: 0 auto;
-  height: auto;
-}
+
 </style>

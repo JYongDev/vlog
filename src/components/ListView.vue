@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="list">
         <div class="list_items" v-for="item in datas" :key="item.id">
             <div>
                 <a>
@@ -135,6 +135,10 @@ export default {
 </script>
 
 <style scoped>
+
+.list{
+    background-color: #fff;
+}
 .list_items{
     border: none; 
     border-bottom: 1px solid #e2e2e2;  
