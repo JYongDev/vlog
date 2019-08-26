@@ -5,15 +5,13 @@
                 <strong>
                     <a href="#" class="dark" >关于</a> &nbsp; 
                     <span class="snow">·</span> &nbsp; 
-                    <a href="#" class="dark">API</a> &nbsp; 
-                    <span class="snow">·</span> &nbsp; 
                     <a href="#" class="dark">感谢</a> &nbsp; 
                 </strong>
                     <span class="small fade">
                         build by jyong , copy theme from 
                         <a href="https://www.v2ex.com" target="blank">https://www.v2ex.com</a> 
                         <br>
-                        ♥ learning vue.js
+                         learning vue.js
                     </span>
                 </div>
             </div>

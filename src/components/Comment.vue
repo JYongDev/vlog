@@ -2,9 +2,9 @@
     <div class="comments">
         <div class="comments_head">
             <span>{{commentsExtra.total}}</span>
-            <span>&nbsp;回复</span>
+            <span>&nbsp;附言</span>
             <span>&nbsp;|&nbsp;</span>
-            <span>最后回复：</span>
+            <span>最后附言时间：</span>
             <span>{{commentsExtra.finalReplyTime}}</span>
         </div>
         <div class="comments_content" v-for="item in comments" :key="item.id">
@@ -117,7 +117,7 @@ export default {
     font-size: 14px;
     line-height: 1.6;
     text-align: left;
-    color: #69696f;
+    color: #000;
     word-break: break-word;
 }
 </style>

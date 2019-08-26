@@ -93,7 +93,7 @@ export default {
 .article_content{
     font-size: 15px;
     line-height: 1.8;
-    color: #69696f;
+    color: #000;
     word-break: break-word;
     padding: 15px;
     text-align: left;
@@ -141,14 +141,14 @@ export default {
 }
 
 .fade{
-    color: #ccc;
+    color: #9ba4ad;
     font-size: smaller;
 }
 
 .snow{
     font-size: 12px;
      text-align: center;
-    color: #eaeaea;
+    color: #9ba4ad;
 }
 
 .article_bold{

@@ -4,7 +4,7 @@
     <div class="center" >
       <div class="content">
         <div class="left">
-          <tabs ref="tabs" :datas="tabList"></tabs>
+          <tabs :datas="tabList"></tabs>
           <router-view></router-view>
         </div>
         <div class="right">

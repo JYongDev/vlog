@@ -22,7 +22,7 @@ export default {
 <style scoped>
 #tabs{
     border-bottom: 1px solid #efefef;
-    padding: 13px;
+    padding: 10px;
     background: #fff;
     font-size: 14px;
     line-height: 14px;
